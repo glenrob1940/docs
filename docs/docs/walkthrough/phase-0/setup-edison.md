@@ -230,14 +230,22 @@ Out:   serial
 Err:   serial
 Hit any key to stop autoboot:  0 
 ```
-1. Hit any key to drop to a prompt and type:  
+1. Hit any key to drop to a prompt and type: 
+
 `printenv bootargs_target`
+
 2. If the answer is  
-`bootargs_target=first-install`  
+
+`bootargs_target=first-install` 
+
 then type:  
-`setenv bootargs_target multi-user`   
+
+`setenv bootargs_target multi-user`  
+
 `saveenv`  
+
 3. And to exit that firmware u-boot prompt:  
+
 `run do_boot`
 
 ### Override DNS resolvers
